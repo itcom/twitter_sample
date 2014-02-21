@@ -76,7 +76,7 @@ class Controller_Top extends Controller_Template
 		$data['result'] = $result;
 		$data['tweet'] = $tweet;
 		$data['token'] = $token;
-		$data['user'] = $user->__resp->data;
+		$data['user'] = isset($user->__resp) ? $user->__resp->data : $user;
 		$data["subnav"] = array('post'=> 'active' );
 		$this->template->title = 'Top &raquo; Post';
 		$this->template->content = View::forge('top/post', $data);
