@@ -10,9 +10,10 @@ desktop.ini
 *.tmproj
 build
 .idea
-/fuel/vendor
-/fuel/app/logs/*/*/*
-/fuel/app/cache/*/*
-/fuel/app/config/crypt.php
+fuel/vendor
+fuel/app/logs/*
+fuel/app/logs/*/*/*
+fuel/app/cache/*/*
+fuel/app/config/crypt.php
 nbproject/
 
